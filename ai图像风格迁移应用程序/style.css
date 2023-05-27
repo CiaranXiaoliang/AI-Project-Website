@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.ai-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.ai-logo img {
+    max-width: 50px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-input {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;

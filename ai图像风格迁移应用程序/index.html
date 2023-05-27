@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Style Transfer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="ai-logo">
+            <img src="ai-logo.png" alt="AI Logo">
+        </div>
+        <h1>Image Style Transfer</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="image-input">
+                <label for="content-image">Content Image:</label>
+                <input type="file" id="content-image" accept="image/*">
+            </div>
+            <div class="image-input">
+                <label for="style-image">Style Image:</label>
+                <input type="file" id="style-image" accept="image/*">
+            </div>
+            <button id="transfer-button">Transfer Style</button>
+        </div>
+
+        <div id="result" class="container">
+            <h2>Result</h2>
+            <div id="result-image"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.0.0/dist/mobilenet.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/style-transfer@1.0.0"></script>
+    <script src="script.js"></script>
+</body>
+</html>
